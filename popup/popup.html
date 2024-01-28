@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 8px;
-            width: 300px;
+            width: 400px;
             box-sizing: border-box;
             text-align: center;
             font-size: 0.85em;
@@ -21,11 +21,21 @@
             }
         }
 
+        /* yaha se logo ki styles change hongi */
+        #logo-spy-i{
+            width: 30px;
+            position: absolute;
+            right: 130px;
+            top: 27px;
+        }
+
     </style>
     <script type="module" src="popup.js"></script>
 </head>
 
 <body>
+    <!-- ye logo ka img tag -->
+    <img id="logo-spy-i" src="../images/new-logo.png" alt="Example Image" width="200">
     <extension-popup></extension-popup>
 </body>
 

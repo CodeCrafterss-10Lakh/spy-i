@@ -19,3 +19,10 @@
         opacity: 0;
     }
 }
+
+/* modified logo image */
+#logo-spy-i{
+    width: 50px;
+    position: absolute;
+    top: 200px;
+}
