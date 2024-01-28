@@ -23,7 +23,8 @@ export const sharedStyles = css`
     }
 
     * {
-        font-family: "Trebuchet MS", "Arial", sans-serif;
+        font-family: 'Merienda', cursive;
+        
     }
 `;
 

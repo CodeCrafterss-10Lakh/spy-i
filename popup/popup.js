@@ -5,7 +5,7 @@ import * as constants from "../scripts/constants.js";
 import { LitElement, html, css } from '../scripts/lit/lit-core.min.js';
 
 // Import component styles
-import { onOffSwitchStyles, sharedStyles, actionButtonStyles, patternsListStyles, patternLinkStyles } from "./styles.js";
+import { onOffSwitchStyles, sharedStyles, actionButtonStyles ,patternsListStyles ,patternLinkStyles } from "./styles.js";
 
 /**
  * The object to access the API functions of the browser.
