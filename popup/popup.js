@@ -379,7 +379,7 @@ export class FoundPatternsList extends LitElement {
         return html`
         <div>
             <h2>${brw.i18n.getMessage("headingFoundPatterns")}</h2>
-            <h2 style="color: ${this.results.countVisible ? "red" : "green"}">${this.results.countVisible}</h2>
+            <h2 style="color: ${this.results.countVisible ? "red" : "#09f609"}">${this.results.countVisible}</h2>
             <ul>
                 ${this.results.patterns?.map((pattern) => {
             let currentPatternInfo = constants.patternConfig.patterns.find(p => p.name === pattern.name);

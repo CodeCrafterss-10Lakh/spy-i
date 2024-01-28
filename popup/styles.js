@@ -18,13 +18,22 @@ export const sharedStyles = css`
         color: inherit;
     }
 
+    h1{
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-weight: 600;
+        font-display: swap;
+       
+
+    }
+
     h2 {
         margin: 0.5em 0;
+        
     }
 
     * {
         font-family: 'Merienda', cursive;
-        
     }
 `;
 
@@ -41,7 +50,7 @@ export const patternLinkStyles = css`
 
 export const actionButtonStyles = css`
     div span {
-        color: #217284;
+        color: #29c9c7;
         font-weight: bold;
         cursor: pointer;
         text-decoration: none;
