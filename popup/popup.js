@@ -683,3 +683,19 @@ export class PopupFooter extends LitElement {
 }
 // Define a custom element for the component so that it can be used in the HTML DOM.
 customElements.define("popup-footer", PopupFooter);
+
+
+// changes by dj to add working button
+// popup.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the button element by its ID
+    var exampleButton = document.getElementById('exampleButton');
+
+    // Add a click event listener to the button
+    exampleButton.addEventListener('click', function () {
+        // Handle the button click, e.g., open the URL in a new tab
+        chrome.tabs.create({ url: exampleButton.href });
+    });
+});
+

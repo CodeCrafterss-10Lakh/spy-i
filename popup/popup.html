@@ -8,6 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap" rel="stylesheet">
     <style>
+
+/* Style for the button link */
+   /* Style for the button link */
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Style for the button link on hover */
+        .button-link:hover {
+            background-color: #45a049;
+        }
+
         body {
             margin: 0;
             padding: 8px;
@@ -37,6 +57,49 @@
             border: 2px solid rgb(255, 255, 255); /* add a border */
         }
 
+/* button css */
+        .button-73 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 0.9rem 1.1rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-73:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
     </style>
     <script type="module" src="popup.js"></script>
 </head>
@@ -45,7 +108,11 @@
     <!-- ye logo ka img tag -->
     <img id="logo-spy-i" src="../images/new-logo.png" alt="Example Image" width="200">
     <extension-popup></extension-popup>
-    <button type="button">Know More</button>
+    <!-- HTML !-->
+<!-- <a href="https://consumerhelpline.gov.in/" class="button-73" id="exampleButton" target="_blank">Report</a> -->
+  <a rel="noopener" href="https://consumerhelpline.gov.in/" class="button-link" id="exampleButton" target="_blank">Visit Consumer Helpline</a>
+
+   
 </body>
 
 </html>
