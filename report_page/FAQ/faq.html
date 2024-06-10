@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="./faq.css">
+</head>
+<body>
+     <header>
+        <div class="header-content">
+        <img src="new-logo.png" alt="Spy-i Logo" class="logo">
+        
+        
+        <h1>Frequently Asked Questions</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="../dark pattern/dpp.html" target="_blank">Dark Pattern</a></li>
+                <li><a href="../news_page/newss.html" target="_blank">News</a></li>
+                <li><a href="../report.html" target="_blank">Report</a></li>
+                <li><a href="../FAQ/faq.html" target="_blank">FAQ's</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="faq">
+            <!-- FAQ Items -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    Where can I encounter dark patterns?
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Dark patterns can be encountered on various online platforms, including e-commerce websites, social media, and other digital services that aim to manipulate user behavior for commercial gain.</p>
+                </div>
+            </div>
+            <!-- More FAQ items... -->
+                        <div class="faq-item">
+                <div class="faq-question">
+                    Are there any tools or extensions to help avoid dark patterns?
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, there are browser extensions and tools designed to help users avoid dark patterns. Extensions like "spy-i" and privacy-focused tools can alert you to potentially deceptive practices on websites.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What are dark patterns in e-commerce?
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Dark patterns are deceptive design tactics used by websites and apps to manipulate users into performing actions they might not otherwise take. These can include tricking users into signing up for subscriptions, making it difficult to cancel services, hiding fees until the last minute, and more.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is important when submitting examples?
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>When submitting examples, it is important to provide clear and detailed descriptions of the dark patterns encountered, including screenshots or videos, and any relevant context that helps in understanding the manipulation technique used.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    How do I document a dark pattern correctly?
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>To document a dark pattern correctly, capture all steps and interactions that lead to the deceptive experience, provide screenshots or screen recordings, and describe the context and consequences of the pattern on user behavior.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are dark patterns illegal?
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The legality of dark patterns varies by region. Some countries have started implementing regulations to ban or restrict the use of dark patterns. For example, the European Union's General Data Protection Regulation (GDPR) has provisions against certain types of deceptive design practices.</p>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 Spy-i . All rights reserved.</p>
+    </footer>
+
+    <!-- Floating Button and Form -->
+    <div class="floating-button">
+        <span class="plus">+</span>
+    </div>
+    <div class="query-form">
+        <h2>Submit Your Query</h2>
+        <form id="queryForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="success-popup">Query submitted successfully!</div>
+
+    <script src="./faq.js"></script>
+</body>
+</html>
