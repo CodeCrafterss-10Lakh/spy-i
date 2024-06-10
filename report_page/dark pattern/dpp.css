@@ -18,6 +18,12 @@ body {
     align-items: center;
     /* background: #000; */
 }
+header, footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
 .outer-box{
     margin-left: 10rem;
     margin-right: 10rem;
