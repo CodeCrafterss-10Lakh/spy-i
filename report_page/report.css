@@ -11,14 +11,13 @@ body {
 
 header {
     width: 100%;
+    height: 80px;
     /* background-color: #007bff; */
-    background-color: black;
+    background-color: #333;
     color: white;
     padding: 15px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-   
-   
-      display: flex; 
+    display: flex; 
     justify-content: center;
     align-items: center;
 
@@ -40,7 +39,7 @@ header {
 
 
 header .logo {
-    max-width: 100px;
+    /* max-width: 100px; */
     margin-bottom: 10px;
 }  
 
@@ -84,15 +83,14 @@ nav ul li a:hover {
 .container {
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* border-radius: 8px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
-
     text-align: center;
 }
 
@@ -113,9 +111,9 @@ input, select, textarea, button {
     border-radius: 4px;
 }
 
-input[type="url"] {
-    width: 100%;
-}
+/* input[type="url"] {
+    width: 98.3%;
+} */
 
 button {
     background-color: #007bff;
@@ -130,12 +128,22 @@ button:hover {
     background-color: #0056b3;
 }
 
-footer {
+/* footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-        }
+        } */
 
-
+footer{
+    height: 80px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+}
 
