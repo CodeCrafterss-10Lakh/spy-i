@@ -11,7 +11,77 @@
             padding: 0;
             box-sizing: border-box;
         }
-        header, footer {
+        header {
+    width: 100%;
+    /* background-color: #007bff; */
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+   
+      display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    /* flex-direction: column;  */
+    /* text-align: center; */
+}
+
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+
+
+header .logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}  
+
+
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    gap: 15px;
+   
+
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    /* color: #0056b3; */
+    /* color: #007bff; */
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+         footer {
             background-color: #333;
             color: white;
             text-align: center;
@@ -75,9 +145,26 @@
     </style>
 </head>
 <body>
-    <header>
+
+     <header>
+        <div class="header-content">
+        <img src="../assets/new-logo.png" alt="Spy-i Logo" class="logo">
+        
+        
         <h1>News</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="../dark pattern/dpp.html" target="_blank">Dark Pattern</a></li>
+                <li><a href="../news_page/newss.html" target="_blank">News</a></li>
+                <li><a href="../report.html" target="_blank">Report</a></li>
+                <li><a href="../FAQ/faq.html" target="_blank">FAQ's</a></li>
+            </ul>
+        </nav>
+        </div>
     </header>
+
+
     <div class="container">
         <p>Find the latest information here.</p>
         <div class="news-section" id="news-section">
