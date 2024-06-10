@@ -3,22 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report Dark Patterns</title>
+    <title>Report Dark Pattern</title>
+    <link rel="stylesheet" href="report.css">
 </head>
 <body>
-    <header>
 
+    <header>
+        <div class="header-content">
+        <img src="new-logo.png" alt="Spy-i Logo" class="logo">
+        
+        
+        <h1>Spy-i Dark Pattern Reporter</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="DarkPattern.html">Dark Pattern</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
     </header>
 
+    <div class="container">
+        <h1>Report Dark Pattern</h1>
+        <form id="reportForm">
+            <label for="patternType">Type of Dark Pattern:</label>
+            <select id="patternType" name="patternType">
+                <option value="hiddenCosts">Hidden Costs</option>
+                <option value="fakeUrgency">Fake Urgency</option>
+                <option value="subscriptionTrickery">Subscription Trickery</option>
+                <option value="forcedAccountCreation">Forced Account Creation</option>
+                <option value="misleadingInfo">Misleading Product Information</option>
+                <option value="limitedChoice">Limited User Choice</option>
+                <option value="uiDeception">User Interface Deception</option>
+                <option value="fakeReviews">Fake Reviews</option>
+            </select>
 
+<<<<<<< HEAD
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Describe the dark pattern..."></textarea>
+
+            <label for="url">URL of the Website:</label>
+            <input type="url" id="url" name="url" placeholder="https://example.com" required>
+=======
     <section>
+>>>>>>> 36dc26418462a0f8c4bb937f8058ac62153b8ded
 
-    </section>
-
-
-    
-    <footer>
-
-    </footer>
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+    <script src="report.js"></script>
 </body>
 </html>
+
+
