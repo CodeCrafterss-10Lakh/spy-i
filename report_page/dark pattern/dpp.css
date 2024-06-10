@@ -18,11 +18,68 @@ body {
     align-items: center;
     /* background: #000; */
 }
+
 header, footer{
     background-color: #333;
     color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
     padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+
+
+header .logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}  
+
+
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    gap: 15px;
+   
+
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    /* color: #0056b3; */
+    /* color: #007bff; */
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
 }
 .outer-box{
     margin-left: 10rem;
