@@ -1,0 +1,159 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 2em auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq {
+    margin-top: 2em;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+
+.faq-question {
+    padding: 1em;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #eee;
+}
+
+.faq-answer {
+    display: none;
+    padding: 1em;
+    background-color: #fff;
+}
+
+.toggle {
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+.open .toggle {
+    transform: rotate(45deg);
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.floating-button:hover {
+    background-color: #555;
+}
+
+.query-form {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    width: 300px;
+}
+
+.query-form h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.query-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.query-form label {
+    font-weight: bold;
+}
+
+.query-form input,
+.query-form textarea,
+.query-form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.query-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.query-form button:hover {
+    background-color: #555;
+}
+
+.success-popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1001;
+}
+
+footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
