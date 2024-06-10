@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News_Dark_Patterns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .news-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .news-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .news-item:hover {
+            transform: scale(1.05);
+        }
+        .news-item img {
+            width: 100%;
+            height: auto;
+        }
+        .news-content {
+            padding: 15px;
+        }
+        .news-content h3 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+        .news-content p {
+            font-size: 1em;
+            margin: 0 0 15px;
+        }
+        .read-more {
+            display: inline-block;
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .read-more:hover {
+            color: #003366;
+        }
+        @media (max-width: 768px) {
+            .news-item {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .news-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>News</h1>
+    </header>
+    <div class="container">
+        <p>Find the latest information here.</p>
+        <div class="news-section" id="news-section">
+            <!-- JavaScript will populate news articles here -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Spy-i . All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Data for news articles
+        const newsData = [
+            {
+                title: "Government Bans Dark Patterns on E-commerce Platforms, Notifies Guidelines",
+                description: "The Indian government has issued new guidelines to ban dark patterns on e-commerce platforms, aiming to protect consumers from deceptive practices...",
+                link: "https://economictimes.indiatimes.com/tech/technology/government-bans-dark-patterns-on-ecommerce-platforms-notifies-guidelines/articleshow/105676365.cms?from=mdr",
+                image: "../assets/news1.png"
+            },
+            {
+                title: "Govt's Ban on Dark Patterns: Explained",
+                description: "This article from the Indian Express explains the Indian government's recent ban on dark patterns in e-commerce...",
+                link: "https://indianexpress.com/article/explained/explained-sci-tech/govt-dark-patterns-explained-8698289/",
+                image: "../assets/news2.png"
+            },
+            {
+                title: "Govt Organises Hackathon to Curb Dark Patterns on E-commerce Platforms",
+                description: "The Indian government has initiated a hackathon aimed at developing solutions to detect and mitigate dark patterns on e-commerce platforms...",
+                link: "https://government.economictimes.indiatimes.com/news/secure-india/govt-organises-hackathon-to-curb-dark-patterns-on-e-commerce-platforms/107805582",
+                image: "../assets/news3.jpeg"
+            },
+            {
+                title: "Govt Issues List of 13 Dark Patterns Plaguing E-commerce Websites",
+                description: "The Indian government has released a comprehensive list of 13 dark patterns that are commonly used by e-commerce websites to deceive consumers. These include tactics like false urgency, hidden charges, and difficulty in unsubscribing from services. The new guidelines aim to curb these manipulative practices and enhance consumer protection in the digital marketplace.",
+                link: "https://inc42.com/buzz/govt-issues-list-of-13-dark-patterns-plaguing-ecommerce-websites/",
+                image: "../assets/news4.png"
+            },
+            {
+                title: "Govt Seeks Public Comments on Draft Guidelines for Regulation of Dark Patterns on Online Platforms",
+                description: "The Indian government is inviting public comments on its draft guidelines aimed at regulating dark patterns on online platforms. These guidelines propose measures to tackle deceptive practices that manipulate consumer behavior, such as false urgency, hidden charges, and difficult subscription cancellations. The initiative is part of a broader effort to enhance transparency and protect consumer rights in the digital space.",
+                link: "https://economictimes.indiatimes.com/tech/technology/govt-seeks-public-comments-on-draft-guidelines-for-regulation-of-dark-patterns-on-online-platforms/articleshow/103461129.cms?from=mdr",
+                image: "../assets/news5.png"
+            },
+            {
+                title: "Half of Consumers Battling Dark Patterns: Hidden Fees, Forced Actions Plague Online Payments, Reveals Survey",
+                description: "The article discusses the prevalence of dark patterns in e-commerce websites, which are deceptive design elements or tactics aimed at manipulating users into certain actions. It highlights findings from a survey revealing that a significant portion of consumers face challenges such as hidden fees and forced actions when making online payments.",
+                link: "https://www.businesstoday.in/latest/trends/story/half-of-consumers-battling-dark-patterns-hidden-fees-forced-actions-plague-online-payments-reveals-survey-424949-2024-04-09",
+                image: "../assets/news6.png"
+            }
+        ];
+
+        // Function to generate news items
+        function generateNewsItem(news) {
+            const newsItem = document.createElement('div');
+            newsItem.classList.add('news-item');
+
+            const image = document.createElement('img');
+            image.src = news.image;
+            image.alt = news.title;
+            newsItem.appendChild(image);
+
+            const newsContent = document.createElement('div');
+            newsContent.classList.add('news-content');
+
+            const title = document.createElement('h3');
+            title.textContent = news.title;
+            newsContent.appendChild(title);
+
+            const description = document.createElement('p');
+            description.textContent = news.description;
+            newsContent.appendChild(description);
+
+
+const readMoreLink = document.createElement('a');
+readMoreLink.href = news.link;
+readMoreLink.textContent = 'Read more';
+readMoreLink.classList.add('read-more');
+readMoreLink.target = "_blank"; // Opens link in a new tab
+newsContent.appendChild(readMoreLink);
+        
+
+            newsItem.appendChild(newsContent);
+
+            return newsItem;
+        }
+
+        // Function to display news articles
+        function displayNewsArticles() {
+            const newsSection = document.getElementById('news-section');
+
+            // Clear existing news items
+            newsSection.innerHTML = '';
+
+            // Generate and append news items
+            newsData.forEach(news => {
+                const newsItem = generateNewsItem(news);
+                newsSection.appendChild(newsItem);
+            });
+        }
+
+        // Display news articles on page load
+        window.onload = displayNewsArticles;
+    </script>
+</body>
+</html>
+
