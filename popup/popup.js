@@ -704,7 +704,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add an event listener to the Report button
     document.getElementById("reportButton").addEventListener("click", function () {
         // Open a new tab with the specified link
-        chrome.tabs.create({ url: "https://dapde.de/en/publikationen-co-en/dark-pattern-melden_de-en/" });
+        chrome.tabs.create({ url: "../report_page/report.html" });
     });
 });
 
