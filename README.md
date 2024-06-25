@@ -2,8 +2,17 @@ Dark Pattern Recognition This web browser extension “Spy-i”, is intended to 
 
 Additional Features: –
 
-No Blocking of Web Page Content: The extension ensures that it does not block web page content, allowing users to access information while still benefiting from dark pattern detection.
+> No Blocking of Web Page Content: The extension ensures that it does not block web page content, allowing users to access information while still benefiting from dark pattern detection.
 
-Extension Icon Displaying Number of Detected Dark Patterns: The extension icon dynamically displays the number of detected dark patterns, providing users with a quick visual indicator of potential issues on the webpage.
+> Extension Icon Displaying Number of Detected Dark Patterns: The extension icon dynamically displays the number of detected dark patterns, providing users with a quick visual indicator of potential issues on the webpage.
 
-Function to Individually Highlight Each Detected Dark Pattern: Users have the ability to individually highlight each detected dark pattern out of the 9 famous and profound type of dark patterns.
+> Function to Individually Highlight Each Detected Dark Pattern: Users have the ability to individually highlight each detected dark pattern out of the 9 famous and profound type of dark patterns.
+
+Tech Stack Used:-
+
+ 1)  NLP model- Logistic Regression, SVM, Random Forest, Gradient Boosting
+ 2)  Web Extension- HTML, CSS, JS
+ 3)   Deep Learning Python Frameworks: Pytorch, Tensorflow, Keras.
+ 4)   Dataset Information: The dataset.tsv file located in this directory serves as the dataset for automatically detecting text-based dark patterns.
+ 5)   We have done experimental code of baseline evaluation using classical NLP methods and transformer-based pre-trained language models.
+ 6)   Scraping Section: This directory contains the code designed to gather non-dark pattern texts for inclusion in the dataset.
